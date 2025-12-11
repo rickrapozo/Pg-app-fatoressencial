@@ -8,6 +8,13 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
+  preview: {
+    host: true,
+    port: 4173,
+    allowedHosts: [
+      "app-fator-essencial-pg-app-fator.hwx2ti.easypanel.host",
+    ],
+  },
   plugins: [react()],
   resolve: {
     alias: {
